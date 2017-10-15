@@ -173,7 +173,6 @@ void MainWindow::on_actionSobre_triggered()
     QMessageBox::about(this, tr("RS232Term 0.11"),
                         tr("<B>RS232Term</B><BR>"
                         "autor: Roberto O. D. Valle<br>email: "
-                        "<a href='mailto:mtester@mtester.com.br'>mtester@mtester.com.br</a><br> "
-                        "home:<a href='url:http://www.mtester.com.br'>www.mtester.com.br</a>"));
+                        "<a href='mailto:robertooriadne@gmail.com'>robertooriadne@gmail.com</a><br> "));
 }
 
