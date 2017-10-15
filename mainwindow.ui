@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>416</width>
+    <height>519</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>RS232 Term 0.11</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>RX</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonLimparRX">
+          <property name="text">
+           <string>&amp;Limpar RX</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rs232Term.qrc">
+            <normaloff>:/new/prefix1/images/Broom_icon.png</normaloff>:/new/prefix1/images/Broom_icon.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="textEditRX">
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="font">
+           <font>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>TX</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButtonChar">
+          <property name="text">
+           <string>Char</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QRadioButton" name="radioButtonString">
+          <property name="text">
+           <string>String</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonEnviar">
+          <property name="text">
+           <string>&amp;Enviar</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rs232Term.qrc">
+            <normaloff>:/new/prefix1/images/send.png</normaloff>:/new/prefix1/images/send.png</iconset>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButtonLimparTX">
+          <property name="text">
+           <string>&amp;Limpar TX</string>
+          </property>
+          <property name="icon">
+           <iconset resource="rs232Term.qrc">
+            <normaloff>:/new/prefix1/images/Broom_icon.png</normaloff>:/new/prefix1/images/Broom_icon.png</iconset>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="textEditTX">
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>2</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>416</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Arquivo">
+    <property name="title">
+     <string>&amp;Arquivo</string>
+    </property>
+    <addaction name="actionSalvar_RX"/>
+    <addaction name="actionSalvar_TX"/>
+    <addaction name="action_Sair"/>
+   </widget>
+   <widget class="QMenu" name="menu_Ferramentas">
+    <property name="title">
+     <string>&amp;Ferramentas</string>
+    </property>
+    <addaction name="action_Configurar_Porta"/>
+    <addaction name="action_Conectar"/>
+    <addaction name="action_Desconectar"/>
+   </widget>
+   <widget class="QMenu" name="menuA_juda">
+    <property name="title">
+     <string>A&amp;juda</string>
+    </property>
+    <addaction name="actionSobre"/>
+   </widget>
+   <addaction name="menu_Arquivo"/>
+   <addaction name="menu_Ferramentas"/>
+   <addaction name="menuA_juda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Sair"/>
+   <addaction name="actionSalvar_RX"/>
+   <addaction name="actionSalvar_TX"/>
+   <addaction name="separator"/>
+   <addaction name="action_Configurar_Porta"/>
+   <addaction name="action_Conectar"/>
+   <addaction name="action_Desconectar"/>
+   <addaction name="separator"/>
+   <addaction name="actionSobre"/>
+  </widget>
+  <action name="actionSalvar_RX">
+   <property name="icon">
+    <iconset resource="rs232Term.qrc">
+     <normaloff>:/new/prefix1/images/saveRX.png</normaloff>:/new/prefix1/images/saveRX.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar&amp;RX</string>
+   </property>
+  </action>
+  <action name="actionSalvar_TX">
+   <property name="icon">
+    <iconset resource="rs232Term.qrc">
+     <normaloff>:/new/prefix1/images/saveTX.png</normaloff>:/new/prefix1/images/saveTX.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salvar&amp;TX</string>
+   </property>
+  </action>
+  <action name="action_Sair">
+   <property name="icon">
+    <iconset resource="rs232Term.qrc">
+     <normaloff>:/new/prefix1/images/exit.png</normaloff>:/new/prefix1/images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Sair</string>
+   </property>
+  </action>
+  <action name="action_Configurar_Porta">
+   <property name="icon">
+    <iconset resource="rs232Term.qrc">
+     <normaloff>:/new/prefix1/images/configure.png</normaloff>:/new/prefix1/images/configure.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Configurar Porta</string>
+   </property>
+  </action>
+  <action name="actionSobre">
+   <property name="icon">
+    <iconset resource="rs232Term.qrc">
+     <normaloff>:/new/prefix1/images/about.png</normaloff>:/new/prefix1/images/about.png</iconset>
+   </property>
+   <property name="text">
+    <string>Sobre</string>
+   </property>
+  </action>
+  <action name="action_Conectar">
+   <property name="icon">
+    <iconset resource="rs232Term.qrc">
+     <normaloff>:/new/prefix1/images/connect.png</normaloff>:/new/prefix1/images/connect.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Conectar</string>
+   </property>
+  </action>
+  <action name="action_Desconectar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="rs232Term.qrc">
+     <normaloff>:/new/prefix1/images/desconnect.png</normaloff>:/new/prefix1/images/desconnect.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Desconectar</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="rs232Term.qrc"/>
+ </resources>
+ <connections/>
+</ui>

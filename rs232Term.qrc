@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>images/Broom_icon.png</file>
+        <file>images/send.png</file>
+        <file>images/configure.png</file>
+        <file>images/connect.png</file>
+        <file>images/desconnect.png</file>
+        <file>images/about.png</file>
+        <file>images/exit.png</file>
+        <file>images/saveRX.png</file>
+        <file>images/saveTX.png</file>
+    </qresource>
+</RCC>

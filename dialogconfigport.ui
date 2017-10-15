@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogConfigPort</class>
+ <widget class="QDialog" name="DialogConfigPort">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>232</width>
+    <height>251</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Configurar Porta</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Porta</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Baud rate</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Data Bits</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Stop Bits</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>Parity</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>Flow control</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QComboBox" name="comboBoxPorta"/>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBoxBaudRate">
+           <item>
+            <property name="text">
+             <string>1200</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2400</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>4800</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>9600</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>19200</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>38400</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>57600</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>115200</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBoxDataBits">
+           <item>
+            <property name="text">
+             <string>5</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>6</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>7</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>8</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBoxStopBits">
+           <item>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>1.5</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>2</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBoxParity">
+           <item>
+            <property name="text">
+             <string>NONE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ODD</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>EVEN</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>MARK</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SPACE</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="comboBoxFlowControl">
+           <item>
+            <property name="text">
+             <string>NONE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>HARDWARE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>XON-XOFF</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pushButtonCancel">
+         <property name="text">
+          <string>Cancelar</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonOk">
+         <property name="text">
+          <string>OK</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
